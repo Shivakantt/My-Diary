@@ -1,0 +1,21 @@
+<%- include('partial/header.ejs'); %>
+<div class="container my-4">
+  
+  <form class="" action="/compose" method="post">
+  
+  
+  <div class="mb-3">
+    <label for="exampleFormControlInput1 " class="form-label">Title</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="posttitle">
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Post</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="postcontent"></textarea>
+  </div>
+  
+  <button class="button" type="submit" style="vertical-align:middle"><span>Public</span></button>
+</form>
+</div>
+
+<%- include('partial/footer.ejs'); %>
